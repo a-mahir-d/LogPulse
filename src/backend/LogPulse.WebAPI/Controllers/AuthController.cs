@@ -22,7 +22,7 @@ public class AuthController(IOptions<DemoUserSettings> options, IJwtService jwtS
             return BadRequest("INVALID_CREDENTIALS");
         }
 
-        if (!_demoUserSettings.Email.Equals(request.Email) || BCrypt.Net.BCrypt.Verify(request.Password, _demoUserSettings.HashedPassword))
+        if (!_demoUserSettings.Email.Equals(request.Email) || !BCrypt.Net.BCrypt.Verify(request.Password, _demoUserSettings.HashedPassword))
         {
             return BadRequest("INVALID_CREDENTIALS");
         }

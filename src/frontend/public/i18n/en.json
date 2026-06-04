@@ -23,5 +23,31 @@
     "errorInvalid": "Invalid email or password combination.",
     "demoCredentialsPrefix": "If you do not have login credentials, you can obtain them from",
     "demoCredentialsSuffix": ""
+  },
+  "dashboard": {
+    "title": "Log Monitoring Dashboard",
+    "statusLabel": "Simulator Status",
+    "speedLabel": "Stream Speed",
+    "speedStopped": "Stopped",
+    "speedSlow": "Slow (2 logs per second)",
+    "speedMedium": "Medium (5 logs per second)",
+    "speedFast": "Fast (10 logs per second)",
+    "countLabel": "Logs to Display",
+    "countHint": "Enter a value between 0 and 500",
+    "actionBtn": "Start / Update Simulation",
+    "statusActive": "Active",
+    "statusIdle": "Idle",
+    "statsTitle": "System Statistics (Live)",
+    "levelInfo": "Information (Info)",
+    "levelWarning": "Warning (Warning)",
+    "levelError": "Error (Error)",
+    "levelCritical": "Critical (Critical)",
+    "noData": "No log data available yet.",
+    "tableTitle": "Live Log Stream",
+    "colTimestamp": "Timestamp",
+    "colLevel": "Level",
+    "colService": "Source Service",
+    "colMessage": "Message",
+    "noLogsYet": "No live log stream yet. You can start the simulation."
   }
 }

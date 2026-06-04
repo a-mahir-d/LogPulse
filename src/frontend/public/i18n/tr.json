@@ -23,5 +23,31 @@
     "errorInvalid": "E-posta veya şifre hatalı.",
     "demoCredentialsPrefix": "Giriş bilgilerine sahip değilseniz",
     "demoCredentialsSuffix": "adresinden temin edebilirsiniz."
+  },
+  "dashboard": {
+    "title": "Log İzleme Paneli",
+    "statusLabel": "Simülatör Durumu",
+    "speedLabel": "Akış Hızı",
+    "speedStopped": "Durduruldu",
+    "speedSlow": "Yavaş (Saniyede 2 log)",
+    "speedMedium": "Orta (Saniyede 5 log)",
+    "speedFast": "Hızlı (Saniyede 10 log)",
+    "countLabel": "Görüntülenecek Log Sayısı",
+    "countHint": "0 ile 500 arasında bir değer girin",
+    "actionBtn": "Simülasyonu Başlat / Güncelle",
+    "statusActive": "Aktif",
+    "statusIdle": "Beklemede",
+    "statsTitle": "Sistem İstatistikleri (Canlı)",
+    "levelInfo": "Bilgi (Info)",
+    "levelWarning": "Uyarı (Warning)",
+    "levelError": "Hata (Error)",
+    "levelCritical": "Kritik (Critical)",
+    "noData": "Henüz log verisi bulunmuyor.",
+    "tableTitle": "Canlı Log Akışı",
+    "colTimestamp": "Zaman Damgası",
+    "colLevel": "Seviye",
+    "colService": "Kaynak Servis",
+    "colMessage": "Mesaj",
+    "noLogsYet": "Henüz canlı log akışı başlamadı. Simülasyonu başlatabilirsiniz."
   }
 }

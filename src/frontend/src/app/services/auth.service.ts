@@ -10,7 +10,7 @@ import { LoginCredentials } from '../models/auth.models';
 export class AuthService {
   private http = inject(HttpClient);
   private readonly tokenKey = 'idx_token';
-  private readonly baseUrl = `${environment.serverUrl}/users`;
+  private readonly baseUrl = `${environment.serverUrl}/api/auth`;
 
   // Manage login state reactively with Signals
   private tokenSignal = signal<string | null>(

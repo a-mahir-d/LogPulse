@@ -1,3 +1,3 @@
 export const prod = {
-  serverUrl: 'https://logpulse.onrender.com/api'
+  serverUrl: 'https://logpulse.onrender.com'
 };
