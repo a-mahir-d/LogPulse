@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Navbar } from "./components/navbar/navbar";
 import { Footer } from "./components/footer/footer";
 import { inject } from '@vercel/analytics';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 
 @Component({
   selector: 'app-root',
@@ -15,5 +16,6 @@ export class App implements OnInit{
 
   ngOnInit(): void {
     inject();
+    injectSpeedInsights();
   }
 }
