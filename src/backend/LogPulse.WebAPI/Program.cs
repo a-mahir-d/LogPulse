@@ -29,6 +29,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddSingleton<LogSimulatorWorker>();
 builder.Services.AddHostedService(provider => provider.GetRequiredService<LogSimulatorWorker>());
 builder.Services.AddHostedService<DatabaseHostedService>();
+builder.Services.AddHostedService<DatabaseCleaningWorker>();
 
 builder.Services.AddControllers();
 
