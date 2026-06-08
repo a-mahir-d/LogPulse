@@ -35,6 +35,8 @@ builder.Services.AddControllers();
 
 builder.Services.AddSignalR();
 
+builder.Services.AddHealthChecks();
+
 var jwtSettings = builder.Configuration.GetSection("Jwt").Get<JwtSettings>() ?? throw new InvalidOperationException("JwtSettings configuration is missing.");
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -106,5 +108,6 @@ app.UseAuthorization();
 
 app.MapHub<LogHub>("/logHub");
 app.MapControllers();
+app.MapHealthChecks("/health").AllowAnonymous();
 
 app.Run();
